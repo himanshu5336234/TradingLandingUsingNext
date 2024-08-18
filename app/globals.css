@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.maxScreenSize {
+  @apply max-w-[93.75rem] mx-auto;
+}
+
+.heading {
+  @apply leading-[1.1] text-clampHeading tracking-[-1px] text-white text-center font-bold;
+}
+
+.subtext {
+  @apply font-thin leading-tight text-center text-clampSub text-lightGray3 w-[90%];
+}
+
+.cardBackground {
+  @apply h-[25.5rem] relative rounded-lg desktop:h-[27.375rem] after:absolute after:bg-[url('https://density-uploads-dev.s3.ap-south-1.amazonaws.com/market-assets/Images/cubesBg.svg')] after:top-0 after:left-0 after:w-full after:max-w-[206.5px];
+}
+
+.navMenu li {
+  @apply hover:text-gradient5;
+}
+
+.blogsli {
+  @apply hover:text-darkGray2;
+}
+
+a {
+  @apply text-center;
+}
+
+.card {
+  @apply relative rounded-lg before:absolute before:top-0 before:left-0 before:w-full before:h-full  after:z-[1] after:absolute after:top-0 after:left-0 after:h-[70%] after:w-[100%] after:bg-[url('https://density-uploads-dev.s3.ap-south-1.amazonaws.com/market-assets/Images/cubesBg.svg')];
+}
+
+.subHeading {
+  @apply text-[24px] font-bold;
+}
+
+.info {
+  @apply text-lightGray2 text-[20px] leading-[2];
+}
+
+.feesSection {
+  @apply flex flex-col gap-5;
+}
+
+.ios-image {
+  image-rendering: pixelated !important;
+}
+
+/* Blogs Page Styles */
+
+strong {
+  @apply font-bold;
+}
+
+.moreContainer {
+  @apply bg-white absolute top-[70px] right-[28%] uppercase font-[600] text-[0.75rem] tracking-wider text-left flex flex-col justify-center w-[200px] py-3 list-none	shadow-blogsNav;
+}
+
+.blogCardsContainer {
+  @apply mt-[60px] px-9 w-full gap-8 mx-auto grid grid-cols-1 pt-[30px] pb-[150px] tablet:grid-cols-2 tablet3:grid-cols-4 desktop:w-[90%];
+}
+
+.blogCard {
+  @apply flex flex-col justify-between w-full rounded-lg overflow-hidden bg-white cursor-pointer shadow-blogCards hover:shadow-blogCardsHover transition-all;
+}
+
+.postWrapper {
+  @apply p-5 h-auto min-h-[162px] tracking-wider;
+}
+
+.postTag {
+  @apply text-[11px] uppercase font-bold mb-2;
+}
+
+.postTitle {
+  @apply text-[1rem] leading-[1.35] break-words font-bold
+}
+
+.postSummary {
+  @apply text-[14px] font-light mt-3;
+}
+
+.postFooter {
+  @apply uppercase h-[42px] px-5 text-[11px] font-bold flex justify-between items-center tracking-wide border-t-[1px] border-t-[#f4f4f4];
+}
+
+.blogCardLogo {
+  @apply rounded-full overflow-hidden h-7 w-7;
+}
+
+.blogAuthorPublishDate {
+  @apply uppercase text-[11px] tablet:text-[14px] text-lightGray2 leading-tight font-bold tracking-wide;
+}
+
+.blogPublishDate {
+  @apply text-[11px] tablet:text-[13px];
+}
+
+.blogTitle {
+  @apply font-bold text-[26px] mt-3 mb-10 leading-[1.2] tablet:text-[30px] tablet:leading-[1.4];
+}
+
+.blogContent {
+  @apply text-[1rem] tablet:text-[20px] tracking-wide;
+}
+
+.blogNavigation {
+  @apply mt-16 flex flex-col tablet:flex-row gap-6;
+}
+
+.navigationItem {
+  @apply text-left font-bold tracking-wide w-[95%] ;
+}
+
+.navigationLabel {
+  @apply uppercase text-lightGray2 text-[12px] font-normal;
+}
+
+.navigationTitle {
+  @apply mt-[1.8] text-[1rem] tablet:text-[20px] text-left;
+}
+
+.blogRecommendations {
+  @apply px-9 py-12 mt-[96px] bg-blogFooter;
+}
+
+.blogRecommendations-header {
+  @apply uppercase text-lightGray2 font-bold tracking-wider text-[14px] mt-5 mb-10;
+}
+
+.blogRecommendations-blogs {
+  @apply w-full gap-8 grid grid-cols-1 py-[30px] tablet:grid-cols-2 tablet2:grid-cols-3 tablet3:grid-cols-4;
+}
+
+.blogCTA {
+  @apply bg-black text-white hover:bg-darkGray3 transition-all mt-[34px] text-[1rem] px-5 py-2 rounded-md text-center;
+}

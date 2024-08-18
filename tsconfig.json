@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
+    "target": "es5",
+    "paths": {
+      "@": [
+        "app"
+      ],
+      "@/*": [
+        "app/*"
+      ],
+    },
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "new-types.d.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "app/page",
+    "pages"
+, "app/components/Sections/Tradingjourney/TradingJourneyContent.jsx", "app/components/Sections/Whydensity/WhyDensityContent.jsx", "sanity-cms/schemas/blog.ts", "app/api", "sanity-cms/lib/client.ts", "sanity-cms/db/processblogs.mjs", "app/api/sanity-algolia.ts"  ]
+}
